@@ -45,3 +45,6 @@ docker version – Exibe as versões de API, Client e Server do host.
 docker volume  – Gerenciamento dos volumes no Docker.
 docker wait    – Aguarda o retorno da execução de um container para iniciar esse container.
 
+docker build --no-cache -f Dockerfile -t imagem_api ..
+docker run -d --name container_api -p 8000:80 imagem_api ..
+
